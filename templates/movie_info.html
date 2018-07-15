@@ -1,0 +1,34 @@
+{% extends "index.html" %}
+{% block body %}
+
+        
+        <div class="col-md-3">
+
+          <!-- Profile Image -->
+          <div class="box box-primary">
+            <div class="box-body box-profile">
+
+              <h3 class="profile-username text-center">{{i}}</h3>
+
+              <p class="text-muted text-center">{{info["movie"]['title']}}</p>
+                <b align="center">Rating</b> <a class="pull-right"></a>{{info["movie"]['vote_average']}}</br>
+              <ul class="list-group list-group-unbordered">
+                <li class="list-group-item">
+                  <b>Overview</b> <a class="pull-right"></a>{{info["movie"]['overview']}}</br></br>
+                  <b>Cast</b> <a class="pull-right"></a>{{info["cast"]}}</br></br>
+                  <b>Genre</b> <a class="pull-right"></a>{{info["genre"]}}</br></br>
+                  <b>Producers</b> <a class="pull-right"></a>{{info["prod"]}}</br></br>
+                  <b>Directors</b> <a class="pull-right"></a>{{info["direc"]}}</br>
+                </li>
+
+              </ul>
+              
+            </div>
+            <!-- /.box-body -->
+          </div>
+
+          </div>
+          
+
+
+{% endblock %}

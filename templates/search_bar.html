@@ -1,0 +1,24 @@
+{% extends "index.html" %}
+{% block body %}
+
+<div class="container">
+	<div class="row">
+		<h2>Search a Movie</h2>
+           <div id="custom-search-input">
+           <form action="{{ url_for('search_bar') }}" method="post">
+                            <div class="input-group col-md-12">
+                                
+                                <input type="text" class="  search-query form-control" placeholder="Search" name="name"/>
+                                
+                                <span class="input-group-btn">
+                                    <button class="btn btn-danger" type="button">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </span>
+                                
+                            </div>
+                            </form>
+                        </div>
+	</div>
+</div>
+{% endblock %}
